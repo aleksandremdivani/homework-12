@@ -1,0 +1,49 @@
+main {
+  margin: 220px 0 348px;
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main-text {
+      h1,
+      p {
+        line-height: 70px;
+        font-size: 58px;
+        font-weight: 700;
+        max-width: 510px;
+      }
+      h1 {
+        color: $primarycolor;
+        &::after {
+          content: "\1F44B,";
+        }
+      }
+      p {
+        color: $primarycolor;
+      }
+      span {
+        background: $textgradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    img {
+      max-width: 349px;
+      height: 349px;
+      border-radius: 50%;
+      border: 9px solid purple;
+    }
+  }
+}
+@media (max-width: 768px) {
+  main {
+    .main-content {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+      .main-text {
+        text-align: center;
+      }
+    }
+  }
+}

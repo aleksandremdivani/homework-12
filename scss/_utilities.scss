@@ -1,20 +1,59 @@
-body{
-    background-color: #191919;
+body {
+  background-color: #191919;
 }
-.container{
-    max-width: 1204px;
-    margin: auto;
+.container {
+  max-width: 1219px;
+  margin: auto;
 }
-@media(max-width: 768px){
-    .container{
-        padding: 0px 13px;
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 13px;
+  }
+}
+@mixin dFlex(
+  $justifycontent: flex-start,
+  $alignitems: stretch,
+  $flexdirection: row,
+  $columngap: 0,
+  $rowgap: 0
+) {
+  display: flex;
+  justify-content: $justifycontent;
+  align-items: $alignitems;
+  flex-direction: $flexdirection;
+  column-gap: $columngap;
+  row-gap: $rowgap;
+}
+ .section-title {
+      text-align: center;
+      @include dFlex(flex-start, stretch, column, 0, 50px);
+      margin-bottom: 140px;
+      h2 {
+        color: $primarycolor;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      .section-title-p {
+        color: $secondarycolor;
+        font-size: 32px;
+        font-weight: 400
+      }
     }
+%card-base {
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  background-color: #363636;
+  border-radius: 20px;
+  width: 373px;
+  height: 567px;
 }
-@mixin dFlex($justifycontent: flex-start, $alignitems: stretch, $flexdirection: row, $columngap: 0, $rowgap: 0){
-    display: flex;
-    justify-content: $justifycontent;
-    align-items: $alignitems;
-    flex-direction: $flexdirection;
-    column-gap: $columngap;
-    row-gap: $rowgap;
+%img-container-base{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 260px;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

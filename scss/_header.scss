@@ -1,37 +1,42 @@
 @import "./variables";
 .header {
   padding-top: 40px;
+   position: sticky;
+    background-color: #191919;
+    top: 10px;
+    left: 0;
 
   .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 
-    .logo {
-      width: 97px;
-      height: 60px;
-      background: $textgradient;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
+    // .logo {
+    //   width: 97px;
+    //   height: 60px;
+    //   background: $textgradient;
+    //   background-clip: text;
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
+    //   text-align: center;
 
-      div {
-        width: 97px;
-      }
-      span {
-        font-size: 37px;
-        font-weight: 700;
-      }
-      .number {
-        font-size: 37px;
-      }
-      p {
-        font-size: 22px;
-        font-weight: 700;
-        width: 97px;
-      }
-    }
+    //   div {
+    //     width: 97px;
+    //   }
+    //   span {
+    //     font-size: 37px;
+    //     font-weight: 700;
+    //   }
+    //   .number {
+    //     font-size: 37px;
+    //   }
+    //   p {
+    //     font-size: 22px;
+    //     font-weight: 700;
+    //     width: 97px;
+    //   }
+    // }
 
     .header-links {
       display: flex;

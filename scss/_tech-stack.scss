@@ -1,0 +1,25 @@
+@import "./variables";
+.tech-stack {
+  margin: 0 auto 214px;
+
+  div {
+    &:first-child {
+      text-align: center;
+      @include dFlex(flex-start, stretch, column, 0, 50px);
+      margin-bottom: 140px;
+      h2 {
+        color: $primarycolor;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      p {
+        color: $secondarycolor;
+        font-size: 32px;
+        font-weight: 400
+      }
+    }
+  }
+  .icons-list {
+    @include dFlex(space-between, center);
+  }
+}

@@ -10,3 +10,11 @@ body{
         padding: 0px 13px;
     }
 }
+@mixin dFlex($justifycontent: flex-start, $alignitems: stretch, $flexdirection: row, $columngap: 0, $rowgap: 0){
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+    flex-direction: $flexdirection;
+    column-gap: $columngap;
+    row-gap: $rowgap;
+}
